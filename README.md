@@ -164,7 +164,7 @@ Once it works, I look for ways to make it better.
 
 ## 📌 A Little About Me
 
-* 🇵🇰 Based in **Karachi, Pakistan**
+
 * 🔍 Started with **SEO & digital marketing**
 * 💻 Expanding deeper into **software & web development**
 * 🛒 Interested in **e-commerce & digital products**
