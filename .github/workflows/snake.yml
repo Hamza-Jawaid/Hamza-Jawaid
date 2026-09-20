@@ -22,14 +22,15 @@ jobs:
       - name: Fix directory permissions
         run: sudo chmod -R 777 dist
 
-      # Step 2: Generate Streak Card (with private commits)
+# Step 2: Generate Streak Card (with private commits)
       - name: Generate Streak Stats
         uses: be-next/github-streak-stats-action@v1
         with:
           username: Hamza-Jawaid
           token: ${{ secrets.METRICS_TOKEN }}
-          theme: tokyonight
+          theme: github-dark
           hide-border: true
+          background_color: "00000000" # This 8-zero hex code makes it fully transparent
           output-path: dist/streak-stats.svg
 
       # Step 3: Push all images to the "output" branch
