@@ -5,7 +5,7 @@
 <div align="left"> 
   <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/metrics.header.svg?v=2" alt="GitHub Header" /> 
 
-  <img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=Hamza-Jawaid&theme=react-dark&hide_border=true&bg_color=0D1117&color=C9D1D9&line=00CFFF&point=FFFFFF&area=true" alt="Contribution Graph" width="98%" />
+  <img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=Hamza-Jawaid&theme=react-dark&hide_border=true&bg_color=1D1117&color=ffffff&line=ffc800&point=ff0000&area=true" alt="Contribution Graph" width="100%" />
     <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake.svg">
