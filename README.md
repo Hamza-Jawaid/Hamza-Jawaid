@@ -1,7 +1,9 @@
+<img align="right" src="https://hits.sh/github.com/Hamza-Jawaid/Hamza-Jawaid.svg?style=flat-square&label=PROFILE+VIEWS&extraCount=5200&color=blue" alt="Profile Views" />
+
 # Hey, you got me! 👋 
 
 <div align="left"> 
-  <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/metrics.header.svg?v=2" alt="GitHub Header" /> <img align="right" src="https://hits.sh/github.com/Hamza-Jawaid/Hamza-Jawaid.svg?style=flat-square&label=PROFILE+VIEWS&extraCount=5200&color=blue" alt="Profile Views" />
+  <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/metrics.header.svg?v=2" alt="GitHub Header" /> 
 
   <img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=Hamza-Jawaid&theme=react-dark&hide_border=true&bg_color=0D1117&color=C9D1D9&line=00CFFF&point=FFFFFF&area=true" alt="Contribution Graph" width="98%" />
     <picture>
