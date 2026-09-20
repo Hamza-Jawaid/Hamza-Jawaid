@@ -20,9 +20,9 @@
   
   <div align="center">
     <!-- GitHub Streak Stats Card (Generated locally via GitHub Actions) -->
-    <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/streak-stats.svg" alt="GitHub Streak" width="100%" /> <br>
+    <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/streak-stats.svg" alt="GitHub Streak" /> <br>
     <!-- Bottom Metrics Section (Displays Top Languages) -->
-    <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/metrics.bottom.svg?v=2" alt="GitHub Plugins" width="100%"/>
+    <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/metrics.bottom.svg?v=2" alt="GitHub Plugins"/>
   </div>
 
 </div>
