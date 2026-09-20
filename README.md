@@ -1,8 +1,7 @@
-
 # Hey, I'm Hamza 👋
 
 <div align="left">
-  <img src="https://komarev.com/ghpvc/?username=Hamza-Jawaid&color=blue&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://hits.sh/github.com/Hamza-Jawaid/Hamza-Jawaid.svg?style=flat-square&label=PROFILE+VIEWS&extraCount=1000&color=blue" alt="Profile Views" />
 </div>
 
 ### SEO → Development → Building & Learning
@@ -10,6 +9,7 @@
 I'm a digital professional from **planet Earth**, with a background in **SEO, digital marketing, web technologies, and e-commerce**.
 
 I started my journey by helping websites get discovered through search. That curiosity eventually led me deeper into **how websites are built, how products work, and how ideas can become real-world projects**.
+
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake-dark.svg">
@@ -17,9 +17,6 @@ I started my journey by helping websites get discovered through search. That cur
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake.svg">
   </picture>
 </div>
-
----
-
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hamza-Jawaid&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </div>
