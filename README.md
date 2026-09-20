@@ -9,7 +9,7 @@
   <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/metrics.header.svg?v=2" alt="GitHub Header" /> 
 
   <!-- Dynamic Contribution Activity Graph (Custom Vercel deployment) -->
-  <img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=Hamza-Jawaid&theme=react-dark&hide_border=true&bg_color=1D1117&color=ffffff&line=ffc800&point=ff0000&area=true" alt="Contribution Graph" width="100%" />
+  <img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=Hamza-Jawaid&theme=react-dark&hide_border=true&bg_color=1D1117&color=ffffff&line=ffc800&point=ff0000&area=true&area_color=ffc800" alt="Contribution Graph" width="100%" />
     
   <!-- GitHub Contribution Grid Snake Animation (Includes Light/Dark mode sources) -->
   <picture>
