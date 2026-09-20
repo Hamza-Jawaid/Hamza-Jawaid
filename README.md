@@ -1,16 +1,19 @@
-# Hey, you got me!
-<div align="left">
-  <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/github-metrics.svg" alt="GitHub Metrics" />
+# Hey, you got me! 👋
+
+<div align="right">
+  <img src="https://hits.sh/github.com/Hamza-Jawaid/Hamza-Jawaid.svg?style=flat-square&label=PROFILE+VIEWS&extraCount=5200&color=blue" alt="Profile Views" />
 </div>
+
 <div align="center">
+  <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/github-metrics.svg" alt="GitHub Metrics" />
+  <br />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hamza-Jawaid&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <br />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake.svg">
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake.svg">
   </picture>
-</div>
-<div align="right">
-  <img src="https://hits.sh/github.com/Hamza-Jawaid/Hamza-Jawaid.svg?style=flat-square&label=PROFILE+VIEWS&extraCount=5200&color=blue" alt="Profile Views" />
 </div>
 
 ### SEO → Development → Building & Learning
@@ -18,11 +21,6 @@
 I'm a digital professional from **planet Earth**, with a background in **SEO, digital marketing, web technologies, and e-commerce**.
 
 I started my journey by helping websites get discovered through search. That curiosity eventually led me deeper into **how websites are built, how products work, and how ideas can become real-world projects**.
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hamza-Jawaid&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</div>
-
 
 Today, I enjoy working across SEO, development, automation, and digital products — and I'm constantly learning something new.
 
@@ -55,14 +53,12 @@ I'm continuously exploring new technologies and adding new tools to my stack.
 <td width="50%">
 
 ### 🔍 SEO
-
 Technical SEO, on-page optimization, content strategy, search visibility, and website performance.
 
 </td>
 <td width="50%">
 
 ### 💻 Development
-
 Building websites, web applications, tools, and custom solutions while expanding my development skills.
 
 </td>
@@ -72,14 +68,12 @@ Building websites, web applications, tools, and custom solutions while expanding
 <td>
 
 ### 🛒 E-commerce
-
 Exploring online businesses, product systems, e-commerce experiences, and digital products.
 
 </td>
 <td>
 
 ### ⚙️ Automation
-
 Creating bots, workflows, integrations, and tools that make repetitive work simpler.
 
 </td>
