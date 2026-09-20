@@ -1,15 +1,7 @@
-# Hey, I'm Hamza 👋
-
+# Hey, you got me!
 <div align="left">
-  <img src="https://hits.sh/github.com/Hamza-Jawaid/Hamza-Jawaid.svg?style=flat-square&label=PROFILE+VIEWS&extraCount=5200&color=blue" alt="Profile Views" />
+  <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/github-metrics.svg" alt="GitHub Metrics" />
 </div>
-
-### SEO → Development → Building & Learning
-
-I'm a digital professional from **planet Earth**, with a background in **SEO, digital marketing, web technologies, and e-commerce**.
-
-I started my journey by helping websites get discovered through search. That curiosity eventually led me deeper into **how websites are built, how products work, and how ideas can become real-world projects**.
-
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake-dark.svg">
@@ -17,22 +9,19 @@ I started my journey by helping websites get discovered through search. That cur
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake.svg">
   </picture>
 </div>
-
----
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Hamza-Jawaid&theme=tokyonight&no-bg=true&no-frame=true&margin-w=15" alt="GitHub Trophies" />
+<div align="right">
+  <img src="https://hits.sh/github.com/Hamza-Jawaid/Hamza-Jawaid.svg?style=flat-square&label=PROFILE+VIEWS&extraCount=5200&color=blue" alt="Profile Views" />
 </div>
-<br />
+### SEO → Development → Building & Learning
+
+I'm a digital professional from **planet Earth**, with a background in **SEO, digital marketing, web technologies, and e-commerce**.
+
+I started my journey by helping websites get discovered through search. That curiosity eventually led me deeper into **how websites are built, how products work, and how ideas can become real-world projects**.
+
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hamza-Jawaid&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </div>
-<br />
-<div align="center">
-  <img src="https://metrics.lecoq.io/Hamza-Jawaid?config_timezone=Asia%2FKarachi" alt="GitHub Metrics" />
-</div>
 
----
 
 Today, I enjoy working across SEO, development, automation, and digital products — and I'm constantly learning something new.
 
