@@ -1,14 +1,60 @@
+
 # Hey, I'm Hamza 👋
+
+<div align="left">
+  <img src="https://komarev.com/ghpvc/?username=Hamza-Jawaid&color=blue&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+</div>
 
 ### SEO → Development → Building & Learning
 
 I'm a digital professional from **planet Earth**, with a background in **SEO, digital marketing, web technologies, and e-commerce**.
 
 I started my journey by helping websites get discovered through search. That curiosity eventually led me deeper into **how websites are built, how products work, and how ideas can become real-world projects**.
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake.svg">
+  </picture>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hamza-Jawaid&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</div>
+<br />
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Hamza-Jawaid&theme=tokyonight&hide_border=true&layout=compact&v=1" alt="Top Languages" />
+</div>
+<br />
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Hamza-Jawaid&theme=tokyo-night&hide_border=true&v=1" alt="Contribution Graph" />
+</div>
+
+---
 
 Today, I enjoy working across SEO, development, automation, and digital products — and I'm constantly learning something new.
 
 > **I learn by building. I build by experimenting. And I keep improving.**
+
+---
+
+## 🛠️ Technologies & Tools
+
+### Web & Development
+
+<p>
+<img src="https://skillicons.dev/icons?i=html,css,js,php,mysql,python,git,github,firebase" />
+</p>
+
+### Tools & Platforms
+
+<p>
+<img src="https://skillicons.dev/icons?i=wordpress,figma,ps,pr,vscode,cloudflare,linux" />
+</p>
+
+I'm continuously exploring new technologies and adding new tools to my stack.
 
 ---
 
@@ -52,24 +98,6 @@ Creating bots, workflows, integrations, and tools that make repetitive work simp
 
 ---
 
-## 🛠️ Technologies & Tools
-
-### Web & Development
-
-<p>
-<img src="https://skillicons.dev/icons?i=html,css,js,php,mysql,python,git,github,firebase" />
-</p>
-
-### Tools & Platforms
-
-<p>
-<img src="https://skillicons.dev/icons?i=wordpress,figma,ps,pr,vscode,cloudflare,linux" />
-</p>
-
-I'm continuously exploring new technologies and adding new tools to my stack.
-
----
-
 ## 🔨 What I'm Building
 
 I enjoy creating projects that challenge me to learn something new.
@@ -107,85 +135,3 @@ Automation & Integrations
 Performance & SEO
         ↓
 Better UI / UX
-```
-
-I'm particularly interested in understanding **how everything fits together**, rather than learning technologies in isolation.
-
----
-
-## 🧩 SEO Meets Development
-
-My background in SEO gives me a different perspective when building websites.
-
-I think about the complete journey:
-
-**Discover → Visit → Experience → Convert → Grow**
-
-A website shouldn't only work.
-
-It should be:
-
-* ⚡ Fast
-* 🔎 Discoverable
-* 🧭 Easy to navigate
-* 📱 Comfortable to use
-* 🧩 Well structured
-* 📈 Built to grow
-
-That's where I enjoy combining **SEO + development + business + user experience**.
-
----
-
-## 🚀 How I Work
-
-### Learn
-
-I pick something I don't know and start figuring it out.
-
-### Build
-
-I turn what I learn into something practical.
-
-### Break
-
-Things don't always work — that's part of the process.
-
-### Fix
-
-Debugging teaches me more than simply following a tutorial.
-
-### Improve
-
-Once it works, I look for ways to make it better.
-
-> **Learn → Build → Break → Fix → Improve → Repeat.**
-
----
-
-## 📌 A Little About Me
-
-
-* 🔍 Started with **SEO & digital marketing**
-* 💻 Expanding deeper into **software & web development**
-* 🛒 Interested in **e-commerce & digital products**
-* 🤖 Enjoy building **automation and experimental projects**
-* 🧠 Naturally curious about how things work
-* 🚀 Always working on **something new**
-
----
-
-## 🤝 Let's Connect
-
-I'm always open to connecting with people who are **building, learning, experimenting, or simply curious about technology**.
-
-<p>
-<a href="https://www.linkedin.com/in/hamzajawaid">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-</p>
-
----
-
-### ⚡ Keep learning. Keep building.
-
-**The next project is always an opportunity to learn something new.**
