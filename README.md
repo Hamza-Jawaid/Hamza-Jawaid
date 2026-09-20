@@ -1,7 +1,7 @@
 # Hey, I'm Hamza 👋
 
 <div align="left">
-  <img src="https://hits.sh/github.com/Hamza-Jawaid/Hamza-Jawaid.svg?style=flat-square&label=PROFILE+VIEWS&extraCount=1000&color=blue" alt="Profile Views" />
+  <img src="https://hits.sh/github.com/Hamza-Jawaid/Hamza-Jawaid.svg?style=flat-square&label=PROFILE+VIEWS&extraCount=5200&color=blue" alt="Profile Views" />
 </div>
 
 ### SEO → Development → Building & Learning
