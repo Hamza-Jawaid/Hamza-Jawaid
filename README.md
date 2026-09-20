@@ -3,11 +3,11 @@
 <div align="right">
   <img src="https://hits.sh/github.com/Hamza-Jawaid/Hamza-Jawaid.svg?style=flat-square&label=PROFILE+VIEWS&extraCount=5200&color=blue" alt="Profile Views" />
 </div>
-<p align="center">
-  <img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=Hamza-Jawaid&theme=react-dark&hide_border=true&bg_color=0D1117&color=C9D1D9&line=00CFFF&point=FFFFFF&area=true" alt="Contribution Graph" width="98%" />
-</p>
+
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/github-metrics.svg" alt="GitHub Metrics" />
+  <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/metrics.header.svg?v=1" alt="GitHub Header" />
+  <img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=Hamza-Jawaid&theme=react-dark&hide_border=true&bg_color=0D1117&color=C9D1D9&line=00CFFF&point=FFFFFF&area=true" alt="Contribution Graph" width="98%" />
+  <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/metrics.bottom.svg?v=1" alt="GitHub Plugins" />
   <br />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hamza-Jawaid&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
   <br />
@@ -17,7 +17,6 @@
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake.svg">
   </picture>
 </div>
-
 
 ### SEO → Development → Building & Learning
 
