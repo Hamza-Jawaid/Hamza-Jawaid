@@ -18,6 +18,10 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      # Step 1.5: Unlock folder permissions for the next action
+      - name: Fix directory permissions
+        run: sudo chmod -R 777 dist
+
       # Step 2: Generate Streak Card (with private commits)
       - name: Generate Streak Stats
         uses: be-next/github-streak-stats-action@v1
@@ -28,7 +32,7 @@ jobs:
           hide-border: true
           output-path: dist/streak-stats.svg
 
-      # Step 3: Push both images to the "output" branch
+      # Step 3: Push all images to the "output" branch
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
