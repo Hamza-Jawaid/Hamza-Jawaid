@@ -17,16 +17,19 @@ I started my journey by helping websites get discovered through search. That cur
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake.svg">
   </picture>
 </div>
+
+---
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Hamza-Jawaid&theme=tokyonight&no-bg=true&no-frame=true&margin-w=15" alt="GitHub Trophies" />
+</div>
+<br />
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hamza-Jawaid&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </div>
 <br />
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Hamza-Jawaid&theme=tokyonight&hide_border=true&layout=compact&v=1" alt="Top Languages" />
-</div>
-<br />
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Hamza-Jawaid&theme=tokyo-night&hide_border=true&v=1" alt="Contribution Graph" />
+  <img src="https://metrics.lecoq.io/Hamza-Jawaid?config_timezone=Asia%2FKarachi" alt="GitHub Metrics" />
 </div>
 
 ---
