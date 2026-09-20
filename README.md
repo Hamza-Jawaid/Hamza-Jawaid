@@ -9,7 +9,7 @@
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake.svg">
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/github-contribution-grid-snake.svg">
   </picture>
-   <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/streak-stats.svg" alt="GitHub Streak" /> <br>
+   <img align="left" src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/streak-stats.svg" alt="GitHub Streak" /> <br>
   <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/metrics.bottom.svg?v=2" alt="GitHub Plugins" />
 
 </div>
