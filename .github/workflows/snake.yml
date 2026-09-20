@@ -30,7 +30,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           theme: github-dark
           hide-border: true
-          background_color: "00000000" # This 8-zero hex code makes it fully transparent
           output-path: dist/streak-stats.svg
 
       # Step 3: Push all images to the "output" branch
