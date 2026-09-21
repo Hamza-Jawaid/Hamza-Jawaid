@@ -23,7 +23,7 @@
     <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/profile-summary-card-output/algolia/1-repos-per-language.svg" alt="Top Languages by Repo" width="50%"/><img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/profile-summary-card-output/algolia/2-most-commit-language.svg" alt="Top Languages by Commit" width="50%"/>
     <br>
     <!-- GitHub Streak Stats Card (Generated locally via GitHub Actions) -->
-    <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/streak-stats.svg" alt="GitHub Streak" />
+    <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/output/streak-stats.svg" alt="GitHub Streak" width="100%"/>
   </div>
 
 </div>
