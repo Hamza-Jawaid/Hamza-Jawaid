@@ -58,39 +58,7 @@ Today, I enjoy working across SEO, development, automation, and digital products
 I'm continuously exploring new technologies and adding new tools to my stack.
 
 ---
-
-## 🧭 What I Do
-
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top" align="center">
-      <br>
-      <h3>🔍 SEO</h3>
-      <p>Technical SEO, on-page optimization, content strategy, search visibility, and website performance.</p>
-      <br>
-    </td>
-    <td width="50%" valign="top" align="center">
-      <br>
-      <h3>💻 Development</h3>
-      <p>Building websites, web applications, tools, and custom solutions while expanding my development skills.</p>
-      <br>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top" align="center">
-      <br>
-      <h3>🛒 E-commerce</h3>
-      <p>Exploring online businesses, product systems, e-commerce experiences, and digital products.</p>
-      <br>
-    </td>
-    <td width="50%" valign="top" align="center">
-      <br>
-      <h3>⚙️ Automation</h3>
-      <p>Creating bots, workflows, integrations, and tools<br>that make repetitive work simpler.</p>
-      <br>
-    </td>
-  </tr>
-</table>
+<img src="details/skills.svg"/>
 
 ---
 
