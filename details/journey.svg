@@ -173,7 +173,7 @@
 <!-- Bottom Journey -->
 <g font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">
   
-  <g transform="translate(175, 1260)">
+  <g transform="translate(175, 1340)">
     <g fill="none" stroke="#00d084" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(-30, -125) scale(2.5)">
       <circle cx="12" cy="12" r="10"></circle>
       <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
@@ -181,7 +181,7 @@
     <text y="0" fill="#fff" font-size="28" font-weight="700">Explore</text>
   </g>
 
-  <g transform="translate(525, 1260)">
+  <g transform="translate(525, 1340)">
     <g fill="none" stroke="#2f81f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(-30, -125) scale(2.5)">
       <circle cx="12" cy="12" r="3"></circle>
       <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"></path>
@@ -189,14 +189,14 @@
     <text y="0" fill="#fff" font-size="28" font-weight="700">Build</text>
   </g>
 
-  <g transform="translate(875, 1260)">
+  <g transform="translate(875, 1340)">
     <g fill="none" stroke="#f0883e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(-30, -125) scale(2.5)">
       <path d="M9 18h6"></path><path d="M10 22h4"></path><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0012 3a4.65 4.65 0 00-4.5 8.5c.76.76 1.23 1.52 1.41 2.5"></path>
     </g>
     <text y="0" fill="#fff" font-size="28" font-weight="700">Learn</text>
   </g>
 
-  <g transform="translate(1225, 1260)">
+  <g transform="translate(1225, 1340)">
     <g fill="none" stroke="#a371f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(-30, -125) scale(2.5)">
       <path d="M21 2v6h-6"></path>
       <path d="M3 12a9 9 0 0115-6.7L21 8"></path>
