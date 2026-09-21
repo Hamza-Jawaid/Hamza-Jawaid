@@ -79,7 +79,7 @@
       /* Content Layout */
       .content-wrapper {
         font-family: 'Inter', system-ui, sans-serif;
-        padding: 24px;
+        padding: 5px;
         box-sizing: border-box;
         height: 100%;
         display: flex;
