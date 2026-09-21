@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1400" viewBox="0 0 1200 1400">
+<style>
+@keyframes pulse {0%,100%{opacity:.5;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+@keyframes dash {to{stroke-dashoffset:-400}}
+@keyframes float {50%{transform:translateY(-12px)}}
+@keyframes blink {50%{opacity:0}}
+@keyframes orbit {to{transform:rotate(360deg)}}
+*{font-family:Arial,Helvetica,sans-serif}
+</style>
+
+<rect width="1200" height="1400" fill="#0d1117"/>
+
+<!-- background glow -->
+<circle cx="900" cy="620" r="260" fill="#063b70" opacity=".35">
+ <animate attributeName="r" values="250;280;250" dur="6s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Header -->
+<text x="60" y="100" fill="#f0883e" font-size="54" font-weight="700">SEO</text>
+<text x="210" y="100" fill="#c9d1d9" font-size="54">→</text>
+<text x="300" y="100" fill="#2f81f7" font-size="54" font-weight="700">Development</text>
+<text x="650" y="100" fill="#c9d1d9" font-size="54">→</text>
+<text x="730" y="100" fill="#3fb950" font-size="54" font-weight="700">Building &amp; Learning</text>
+
+<!-- journey line -->
+<path d="M160 270 H1040" stroke="#30363d" stroke-width="4"/>
+<path d="M160 270 H1040" stroke="#58a6ff" stroke-width="4"
+stroke-dasharray="80 320" animation="dash">
+<animate attributeName="stroke-dashoffset" from="0" to="-400" dur="3s" repeatCount="indefinite"/>
+</path>
+
+<!-- nodes -->
+<g>
+<circle cx="200" cy="270" r="60" fill="#111827" stroke="#f0883e" stroke-width="5">
+<animate attributeName="r" values="60;68;60" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="145" y="285" fill="#f0883e" font-size="30">SEO</text>
+
+<circle cx="600" cy="270" r="60" fill="#111827" stroke="#2f81f7" stroke-width="5">
+<animate attributeName="r" values="60;68;60" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="520" y="285" fill="#2f81f7" font-size="28">CODE</text>
+
+<circle cx="1000" cy="270" r="60" fill="#111827" stroke="#3fb950" stroke-width="5">
+<animate attributeName="r" values="60;68;60" dur="2s" repeatCount="indefinite"/>
+</circle>
+<text x="930" y="285" fill="#3fb950" font-size="25">BUILD</text>
+</g>
+
+<!-- bio -->
+<text x="70" y="430" fill="#c9d1d9" font-size="30">
+I'm a digital professional from planet Earth,
+</text>
+<text x="70" y="475" fill="#c9d1d9" font-size="30">
+with a background in SEO, digital marketing,
+</text>
+<text x="70" y="520" fill="#c9d1d9" font-size="30">
+web technologies, and e-commerce.
+</text>
+
+<!-- earth -->
+<circle cx="850" cy="700" r="210" fill="#0b2a4a" stroke="#2f81f7" stroke-width="4">
+<animateTransform attributeName="transform" type="rotate" from="0 850 700" to="360 850 700" dur="30s" repeatCount="indefinite"/>
+</circle>
+
+<circle cx="850" cy="700" r="245" fill="none" stroke="#58a6ff" opacity=".4" stroke-dasharray="10 20">
+<animateTransform attributeName="transform" type="rotate" from="0 850 700" to="360 850 700" dur="12s" repeatCount="indefinite"/>
+</circle>
+
+<!-- floating icons -->
+<g fill="#58a6ff" font-size="40">
+<text x="700" y="470">{"< />"}</text>
+<text x="1030" y="560">⚙</text>
+<text x="1050" y="850">◉</text>
+</g>
+
+<!-- terminal -->
+<rect x="70" y="700" width="520" height="320" rx="20" fill="#010409" stroke="#3fb950" stroke-width="3"/>
+<text x="110" y="780" fill="#3fb950" font-size="30">$ whoami</text>
+<text x="110" y="840" fill="#c9d1d9" font-size="28">I learn by building.</text>
+<text x="110" y="890" fill="#c9d1d9" font-size="28">I build by experimenting.</text>
+<text x="110" y="940" fill="#c9d1d9" font-size="28">And I keep improving.</text>
+<rect x="330" y="965" width="18" height="35" fill="#3fb950">
+<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+</rect>
+
+<!-- pillars -->
+<g text-anchor="middle" font-size="30" fill="#c9d1d9">
+<text x="180" y="1150">💡</text><text x="180" y="1210">Explore</text>
+<text x="450" y="1150">⚙</text><text x="450" y="1210">Build</text>
+<text x="720" y="1150">📈</text><text x="720" y="1210">Learn</text>
+<text x="990" y="1150">∞</text><text x="990" y="1210">Repeat</text>
+</g>
+
+<text x="600" y="1340" text-anchor="middle" fill="#58a6ff" font-size="34">
+“I learn by building. I build by experimenting. And I keep improving.”
+</text>
+
+</svg>
