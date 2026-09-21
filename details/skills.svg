@@ -1,9 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 738 518" width="100%" height="100%">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap');
-
       :root {
         --bg-color: transparent;
         --card-bg: #ffffff; 
@@ -61,9 +58,9 @@
         rx: 16;
       }
 
-      /* Native SVG Text Styles */
+      /* Native SVG Text Styles - Using standard system fonts for GitHub compatibility */
       .card-title {
-        font-family: 'Inter', system-ui, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
         font-size: 18px;
         font-weight: 600;
         fill: var(--text-main);
@@ -71,7 +68,7 @@
       }
 
       .card-desc {
-        font-family: 'Inter', system-ui, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
         font-size: 14.5px;
         fill: var(--text-sub);
         font-weight: 400;
@@ -107,7 +104,7 @@
 
       /* TAG STYLING & ANIMATIONS */
       .main-text {
-        font-family: 'Pacifico', cursive;
+        font-family: 'Brush Script MT', 'Comic Sans MS', cursive, sans-serif;
         font-size: 50px;
         fill: var(--tag-text);
         filter: drop-shadow(1px 2px 0px rgba(0,0,0,0.1));
