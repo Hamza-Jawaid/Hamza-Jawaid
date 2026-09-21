@@ -58,6 +58,8 @@ Today, I enjoy working across SEO, development, automation, and digital products
 I'm continuously exploring new technologies and adding new tools to my stack.
 
 ---
+<!-- What I Do Cards -->
+## 🙋🏻‍♂️ What I Do
 <img src="details/skills.svg"/>
 
 ---
