@@ -27,19 +27,10 @@
   </div>
 
 </div>
-
-
-### SEO → Development → Building & Learning
-
-I'm a digital professional from **planet Earth**, with a background in **SEO, digital marketing, web technologies, and e-commerce**.
-
-I started my journey by helping websites get discovered through search. That curiosity eventually led me deeper into **how websites are built, how products work, and how ideas can become real-world projects**.
-
-Today, I enjoy working across SEO, development, automation, and digital products — and I'm constantly learning something new.
-
-> **I learn by building. I build by experimenting. And I keep improving.**
-
----
+<!-- What I Do Cards -->
+<img src="details/skills.svg"/>
+<!-- Journey Cards -->
+<img src="details/journey.svg" />
 
 ## 🛠️ Technologies & Tools
 
@@ -56,12 +47,6 @@ Today, I enjoy working across SEO, development, automation, and digital products
 </p>
 
 I'm continuously exploring new technologies and adding new tools to my stack.
-
----
-<!-- What I Do Cards -->
-<img src="details/skills.svg"/>
-
----
 
 ## 🔨 What I'm Building
 
