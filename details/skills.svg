@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 738 368" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 738 518" width="100%" height="100%">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap');
 
       :root {
         --bg-color: transparent;
@@ -18,6 +19,13 @@
         --accent-2: #9333ea;
         --accent-3: #16a34a;
         --accent-4: #ea580c;
+        
+        /* Tag Light Mode Theme */
+        --tag-grad-1: #bfdbfe;
+        --tag-grad-2: #a7f3d0;
+        --tag-text: #1e293b;
+        --tag-pattern: rgba(255, 255, 255, 0.6);
+        --tag-element-bg: #ffffff;
       }
 
       @media (prefers-color-scheme: dark) {
@@ -26,7 +34,7 @@
           --text-main: #f8fafc;
           --text-sub: #94a3b8;
           --border: #334155;
-          --shadow: rgba(0, 0, 0, 0.2);
+          --shadow: rgba(0, 0, 0, 0.3);
           --icon-bg-1: rgba(2, 132, 199, 0.2);
           --icon-bg-2: rgba(147, 51, 234, 0.2);
           --icon-bg-3: rgba(22, 163, 74, 0.2);
@@ -35,10 +43,17 @@
           --accent-2: #c084fc;
           --accent-3: #4ade80;
           --accent-4: #fb923c;
+          
+          /* Tag Dark Mode Theme */
+          --tag-grad-1: #0f172a;
+          --tag-grad-2: #064e3b;
+          --tag-text: #f8fafc;
+          --tag-pattern: rgba(45, 212, 191, 0.15);
+          --tag-element-bg: #1e293b;
         }
       }
 
-      /* Card Backgrounds Base */
+      /* Card Backgrounds */
       .card-bg {
         fill: var(--card-bg);
         stroke: var(--border);
@@ -46,147 +61,251 @@
         rx: 16;
       }
 
+      /* Native SVG Text Styles */
+      .card-title {
+        font-family: 'Inter', system-ui, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        fill: var(--text-main);
+        letter-spacing: -0.01em;
+      }
+
+      .card-desc {
+        font-family: 'Inter', system-ui, sans-serif;
+        font-size: 14.5px;
+        fill: var(--text-sub);
+        font-weight: 400;
+      }
+
+      .ib-1 { fill: var(--icon-bg-1); }
+      .ib-2 { fill: var(--icon-bg-2); }
+      .ib-3 { fill: var(--icon-bg-3); }
+      .ib-4 { fill: var(--icon-bg-4); }
+
       /* Smooth Walking Glow Animations */
       .cb-1 { animation: glow-1 8s ease-in-out infinite; }
       .cb-2 { animation: glow-2 8s ease-in-out infinite; }
       .cb-3 { animation: glow-3 8s ease-in-out infinite; }
       .cb-4 { animation: glow-4 8s ease-in-out infinite; }
 
-      /* Card 1: Peaks at 0% */
       @keyframes glow-1 {
         0%, 100% { stroke: var(--accent-1); filter: drop-shadow(0 0 16px var(--accent-1)); stroke-width: 2; }
         25%, 75% { stroke: var(--border); filter: drop-shadow(0 4px 6px var(--shadow)); stroke-width: 1.5; }
       }
-      
-      /* Card 2: Peaks at 25% */
       @keyframes glow-2 {
         0%, 50%, 100% { stroke: var(--border); filter: drop-shadow(0 4px 6px var(--shadow)); stroke-width: 1.5; }
         25% { stroke: var(--accent-2); filter: drop-shadow(0 0 16px var(--accent-2)); stroke-width: 2; }
       }
-      
-      /* Card 3: Peaks at 50% */
       @keyframes glow-3 {
         0%, 25%, 75%, 100% { stroke: var(--border); filter: drop-shadow(0 4px 6px var(--shadow)); stroke-width: 1.5; }
         50% { stroke: var(--accent-3); filter: drop-shadow(0 0 16px var(--accent-3)); stroke-width: 2; }
       }
-      
-      /* Card 4: Peaks at 75% */
       @keyframes glow-4 {
         0%, 50%, 100% { stroke: var(--border); filter: drop-shadow(0 4px 6px var(--shadow)); stroke-width: 1.5; }
         75% { stroke: var(--accent-4); filter: drop-shadow(0 0 16px var(--accent-4)); stroke-width: 2; }
       }
 
-      /* Content Layout */
-      .content-wrapper {
-        font-family: 'Inter', system-ui, sans-serif;
-        padding: 24px; /* Restored from 5px to give internal text breathing room */
-        box-sizing: border-box;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+      /* TAG STYLING & ANIMATIONS */
+      .main-text {
+        font-family: 'Pacifico', cursive;
+        font-size: 50px;
+        fill: var(--tag-text);
+        filter: drop-shadow(1px 2px 0px rgba(0,0,0,0.1));
       }
 
-      .header {
-        display: flex;
-        align-items: center;
-        gap: 16px;
+      .hover-anim { animation: hover 4s ease-in-out infinite; }
+      .hover-anim-delayed { animation: hover 4s ease-in-out infinite; animation-delay: -2s; }
+      .spin-cw { transform-origin: center; animation: spinRight 8s linear infinite; }
+      .spin-ccw { transform-origin: center; animation: spinLeft 6s linear infinite; }
+      .pulse { animation: pulsing 2s ease-in-out infinite; }
+      .pulse-fast { animation: pulsing 0.8s ease-in-out infinite; }
+
+      @keyframes hover {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
       }
-
-      .icon-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        border-radius: 12px;
+      @keyframes spinRight {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
       }
-
-      .ib-1 { background-color: var(--icon-bg-1); }
-      .ib-2 { background-color: var(--icon-bg-2); }
-      .ib-3 { background-color: var(--icon-bg-3); }
-      .ib-4 { background-color: var(--icon-bg-4); }
-
-      .card-title {
-        margin: 0;
-        font-size: 18px;
-        font-weight: 600;
-        color: var(--text-main);
-        letter-spacing: -0.01em;
+      @keyframes spinLeft {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(-360deg); }
       }
-
-      .card-desc {
-        margin: 0;
-        font-size: 14.5px;
-        line-height: 1.6;
-        color: var(--text-sub);
-        font-weight: 400;
+      @keyframes pulsing {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 1; }
+      }
+      
+      .tag-bg { fill: url(#bg-grad); }
+      .tag-pattern { fill: url(#tech-pattern); }
+      .element-base {
+        fill: var(--tag-element-bg);
+        stroke: var(--border);
       }
     </style>
+
+    <filter id="card-shadow" x="-5%" y="-5%" width="115%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+    <filter id="element-shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.2" />
+    </filter>
+
+    <pattern id="tech-pattern" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 0 40 L 30 40 L 45 25 L 80 25" fill="none" stroke="var(--tag-pattern)" stroke-width="1.5" />
+      <path d="M 20 80 L 20 60 L 35 45 L 80 45" fill="none" stroke="var(--tag-pattern)" stroke-width="1.5" />
+      <circle cx="30" cy="40" r="2.5" fill="var(--tag-pattern)" />
+      <circle cx="45" cy="25" r="2.5" fill="var(--tag-pattern)" />
+      <circle cx="20" cy="60" r="2.5" fill="var(--tag-pattern)" />
+      <circle cx="35" cy="45" r="2.5" fill="var(--tag-pattern)" />
+    </pattern>
+
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="var(--tag-grad-1)" />
+      <stop offset="100%" stop-color="var(--tag-grad-2)" />
+    </linearGradient>
   </defs>
 
-  <!-- Card 1: SEO (Top Left) -->
-  <g class="card-group">
-    <!-- Adjusted coordinates for tighter layout -->
-    <rect class="card-bg cb-1" x="16" y="16" width="345" height="160" />
-    <foreignObject x="16" y="16" width="345" height="160">
-      <div xmlns="http://www.w3.org/1999/xhtml" class="content-wrapper">
-        <div class="header">
-          <div class="icon-box ib-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          </div>
-          <h3 class="card-title">SEO</h3>
-        </div>
-        <p class="card-desc">Technical SEO, on-page optimization, content strategy, search visibility, and website performance.</p>
-      </div>
-    </foreignObject>
+  <!-- ========================================== -->
+  <!-- LAYER 1: GLOWING CARDS (Rendered First)    -->
+  <!-- ========================================== -->
+  <g id="cards-layer" transform="translate(0, 166)">
+    
+    <!-- Card 1: SEO -->
+    <g class="card-group">
+      <rect class="card-bg cb-1" x="16" y="0" width="345" height="160" />
+      <rect class="ib-1" x="40" y="24" width="44" height="44" rx="12" />
+      <g transform="translate(51, 35)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </g>
+      <text x="100" y="52" class="card-title">SEO</text>
+      <text x="40" y="98" class="card-desc">
+        <tspan x="40" dy="0">Technical SEO, on-page optimization, content</tspan>
+        <tspan x="40" dy="22">strategy, search visibility, and website</tspan>
+        <tspan x="40" dy="22">performance.</tspan>
+      </text>
+    </g>
+
+    <!-- Card 2: Development -->
+    <g class="card-group">
+      <rect class="card-bg cb-2" x="377" y="0" width="345" height="160" />
+      <rect class="ib-2" x="401" y="24" width="44" height="44" rx="12" />
+      <g transform="translate(412, 35)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+      </g>
+      <text x="461" y="52" class="card-title">Development</text>
+      <text x="401" y="98" class="card-desc">
+        <tspan x="401" dy="0">Building websites, web applications, tools, and</tspan>
+        <tspan x="401" dy="22">custom solutions while expanding my development</tspan>
+        <tspan x="401" dy="22">skills.</tspan>
+      </text>
+    </g>
+
+    <!-- Card 3: E-commerce -->
+    <g class="card-group">
+      <rect class="card-bg cb-3" x="16" y="176" width="345" height="160" />
+      <rect class="ib-3" x="40" y="200" width="44" height="44" rx="12" />
+      <g transform="translate(51, 211)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+      </g>
+      <text x="100" y="228" class="card-title">E-commerce</text>
+      <text x="40" y="274" class="card-desc">
+        <tspan x="40" dy="0">Exploring online businesses, product systems,</tspan>
+        <tspan x="40" dy="22">e-commerce experiences, and digital products.</tspan>
+      </text>
+    </g>
+
+    <!-- Card 4: Automation -->
+    <g class="card-group">
+      <rect class="card-bg cb-4" x="377" y="176" width="345" height="160" />
+      <rect class="ib-4" x="401" y="200" width="44" height="44" rx="12" />
+      <g transform="translate(412, 211)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+      </g>
+      <text x="461" y="228" class="card-title">Automation</text>
+      <text x="401" y="274" class="card-desc">
+        <tspan x="401" dy="0">Creating bots, workflows, integrations, and tools</tspan>
+        <tspan x="401" dy="22">that make repetitive work simpler.</tspan>
+      </text>
+    </g>
+
   </g>
 
-  <!-- Card 2: Development (Top Right) -->
-  <g class="card-group">
-    <rect class="card-bg cb-2" x="377" y="16" width="345" height="160" />
-    <foreignObject x="377" y="16" width="345" height="160">
-      <div xmlns="http://www.w3.org/1999/xhtml" class="content-wrapper">
-        <div class="header">
-          <div class="icon-box ib-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-          </div>
-          <h3 class="card-title">Development</h3>
-        </div>
-        <p class="card-desc">Building websites, web applications, tools, and custom solutions while expanding my development skills.</p>
-      </div>
-    </foreignObject>
-  </g>
+  <!-- ========================================== -->
+  <!-- LAYER 2: THEME ADAPTIVE TAG (Rendered Last)-->
+  <!-- ========================================== -->
+  <g id="tag-layer" transform="translate(119, 16)">
+    
+    <g filter="url(#card-shadow)">
+      <rect x="0" y="0" width="500" height="134" rx="8" class="tag-bg" />
+      <rect x="0" y="0" width="500" height="134" rx="8" class="tag-pattern" />
+    </g>
 
-  <!-- Card 3: E-commerce (Bottom Left) -->
-  <g class="card-group">
-    <rect class="card-bg cb-3" x="16" y="192" width="345" height="160" />
-    <foreignObject x="16" y="192" width="345" height="160">
-      <div xmlns="http://www.w3.org/1999/xhtml" class="content-wrapper">
-        <div class="header">
-          <div class="icon-box ib-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-          </div>
-          <h3 class="card-title">E-commerce</h3>
-        </div>
-        <p class="card-desc">Exploring online businesses, product systems, e-commerce experiences, and digital products.</p>
-      </div>
-    </foreignObject>
-  </g>
+    <text x="250" y="85" class="main-text" text-anchor="middle">What I Do</text>
 
-  <!-- Card 4: Automation (Bottom Right) -->
-  <g class="card-group">
-    <rect class="card-bg cb-4" x="377" y="192" width="345" height="160" />
-    <foreignObject x="377" y="192" width="345" height="160">
-      <div xmlns="http://www.w3.org/1999/xhtml" class="content-wrapper">
-        <div class="header">
-          <div class="icon-box ib-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-          </div>
-          <h3 class="card-title">Automation</h3>
-        </div>
-        <p class="card-desc">Creating bots, workflows, integrations, and tools that make repetitive work simpler.</p>
-      </div>
-    </foreignObject>
+    <!-- LEFT ELEMENT: Server & Rings -->
+    <g transform="translate(30, 20)" filter="url(#element-shadow)">
+      <rect x="0" y="0" width="50" height="70" rx="6" class="element-base" stroke-width="2" />
+      
+      <line x1="8" y1="20" x2="42" y2="20" stroke="var(--border)" stroke-width="3" stroke-linecap="round" />
+      <line x1="8" y1="35" x2="42" y2="35" stroke="var(--border)" stroke-width="3" stroke-linecap="round" />
+      <line x1="8" y1="50" x2="42" y2="50" stroke="var(--border)" stroke-width="3" stroke-linecap="round" />
+      
+      <circle cx="12" cy="20" r="2.5" fill="#10b981" class="pulse-fast" />
+      <circle cx="22" cy="20" r="2.5" fill="#10b981" />
+      <circle cx="12" cy="35" r="2.5" fill="#3b82f6" class="pulse" />
+      <circle cx="12" cy="50" r="2.5" fill="#f43f5e" class="pulse" />
+
+      <g transform="translate(25, 105)">
+        <circle cx="0" cy="0" r="28" fill="none" stroke="#3b82f6" stroke-width="3" stroke-dasharray="10 6" class="spin-cw" />
+        <circle cx="0" cy="0" r="16" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="6 4" class="spin-ccw" />
+        <circle cx="0" cy="0" r="6" fill="#8b5cf6" class="pulse" />
+        
+        <g transform="translate(30, -20)">
+          <circle cx="0" cy="0" r="10" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="4 3" class="spin-cw" />
+          <circle cx="0" cy="0" r="3" fill="#10b981" />
+        </g>
+      </g>
+    </g>
+
+    <!-- RIGHT ELEMENT: Hovering Robot -->
+    <g transform="translate(400, -10)">
+      <g class="hover-anim" filter="url(#element-shadow)">
+        <line x1="40" y1="35" x2="40" y2="10" stroke="var(--border)" stroke-width="3" stroke-linecap="round" />
+        <circle cx="40" cy="8" r="6" fill="#f43f5e" class="pulse-fast" />
+        
+        <rect x="5" y="35" width="70" height="75" rx="16" class="element-base" stroke-width="2" />
+        
+        <rect x="15" y="48" width="50" height="30" rx="8" fill="#1e293b" />
+        
+        <circle cx="30" cy="63" r="4.5" fill="#38bdf8">
+          <animate attributeName="opacity" values="1;0;1" dur="4s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="50" cy="63" r="4.5" fill="#38bdf8">
+          <animate attributeName="opacity" values="1;0;1" dur="4s" repeatCount="indefinite" />
+        </circle>
+        
+        <ellipse cx="20" cy="72" rx="4" ry="2" fill="#fbcfe8" opacity="0.8" />
+        <ellipse cx="60" cy="72" rx="4" ry="2" fill="#fbcfe8" opacity="0.8" />
+
+        <line x1="25" y1="95" x2="55" y2="95" stroke="var(--border)" stroke-width="3" stroke-linecap="round" />
+        
+        <circle cx="-5" cy="80" r="8" class="element-base" stroke-width="2" class="hover-anim-delayed" />
+        <circle cx="85" cy="80" r="8" class="element-base" stroke-width="2" class="hover-anim-delayed" />
+      </g>
+
+      <ellipse cx="40" cy="150" rx="24" ry="7" fill="none" stroke="#60a5fa" stroke-width="2" opacity="0.6" class="pulse" />
+      <ellipse cx="40" cy="150" rx="12" ry="3.5" fill="#38bdf8" opacity="0.3" class="pulse-fast" />
+    </g>
+
   </g>
 </svg>
