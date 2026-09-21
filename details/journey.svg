@@ -1,87 +1,110 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1400" viewBox="0 0 1200 1400">
 <defs>
-<linearGradient id="bg" x2="0" y2="1">
-<stop stop-color="#0d1117"/>
-<stop offset="1" stop-color="#010409"/>
-</linearGradient>
-<filter id="glow">
-<feGaussianBlur stdDeviation="6"/>
-</filter>
+  <linearGradient id="bg" x2="1" y2="1">
+    <stop stop-color="#020617"/>
+    <stop offset="0.5" stop-color="#061326"/>
+    <stop offset="1" stop-color="#020409"/>
+  </linearGradient>
+  <radialGradient id="earth">
+    <stop stop-color="#1e88ff"/>
+    <stop offset="1" stop-color="#03182d"/>
+  </radialGradient>
+  <filter id="soft">
+    <feGaussianBlur stdDeviation="12"/>
+  </filter>
 </defs>
 
 <rect width="1200" height="1400" fill="url(#bg)"/>
 
+<!-- ambient lights -->
+<circle cx="900" cy="650" r="300" fill="#0066ff" opacity=".12" filter="url(#soft)">
+ <animate attributeName="opacity" values=".08;.2;.08" dur="5s" repeatCount="indefinite"/>
+</circle>
+
 <!-- Header -->
-<text x="60" y="100" fill="#f0883e" font-size="54" font-family="Arial" font-weight="700">SEO</text>
-<text x="210" y="100" fill="#fff" font-size="54" font-family="Arial">→</text>
-<text x="300" y="100" fill="#2f81f7" font-size="54" font-family="Arial" font-weight="700">Development</text>
-<text x="650" y="100" fill="#fff" font-size="54" font-family="Arial">→</text>
-<text x="730" y="100" fill="#3fb950" font-size="54" font-family="Arial" font-weight="700">Building &amp; Learning</text>
+<text x="60" y="90" fill="#f0883e" font-size="58" font-family="Arial" font-weight="700">SEO</text>
+<text x="210" y="90" fill="#fff" font-size="58">→</text>
+<text x="290" y="90" fill="#2f81f7" font-size="58" font-family="Arial" font-weight="700">Development</text>
+<text x="670" y="90" fill="#fff" font-size="58">→</text>
+<text x="750" y="90" fill="#00d084" font-size="52" font-family="Arial" font-weight="700">Building &amp; Learning</text>
 
-<!-- Journey -->
-<line x1="160" y1="260" x2="1040" y2="260" stroke="#30363d" stroke-width="5"/>
-<line x1="160" y1="260" x2="1040" y2="260" stroke="#58a6ff" stroke-width="5" stroke-dasharray="40 200">
-<animate attributeName="stroke-dashoffset" from="0" to="-240" dur="3s" repeatCount="indefinite"/>
-</line>
-
-<circle cx="200" cy="260" r="55" fill="#111827" stroke="#f0883e" stroke-width="5">
-<animate attributeName="r" values="55;65;55" dur="2s" repeatCount="indefinite"/>
-</circle>
-<text x="155" y="270" fill="#f0883e" font-size="25" font-family="Arial">SEO</text>
-
-<circle cx="600" cy="260" r="55" fill="#111827" stroke="#2f81f7" stroke-width="5">
-<animate attributeName="r" values="55;65;55" dur="2s" repeatCount="indefinite"/>
-</circle>
-<text x="550" y="270" fill="#2f81f7" font-size="22" font-family="Arial">CODE</text>
-
-<circle cx="1000" cy="260" r="55" fill="#111827" stroke="#3fb950" stroke-width="5">
-<animate attributeName="r" values="55;65;55" dur="2s" repeatCount="indefinite"/>
-</circle>
-<text x="950" y="270" fill="#3fb950" font-size="22" font-family="Arial">BUILD</text>
-
-<!-- Bio -->
-<text x="70" y="420" fill="#c9d1d9" font-size="30" font-family="Arial">
-I'm a digital professional from planet Earth,
-</text>
-<text x="70" y="465" fill="#c9d1d9" font-size="30" font-family="Arial">
-working across SEO, development, automation,
-</text>
-<text x="70" y="510" fill="#c9d1d9" font-size="30" font-family="Arial">
-web technologies and e-commerce.
+<text x="600" y="150" text-anchor="middle" fill="#8b949e" font-size="20" letter-spacing="8">
+SEARCH • CODE • BUILD • LEARN • IMPROVE
 </text>
 
-<!-- Earth -->
-<circle cx="850" cy="720" r="220" fill="#062b55" stroke="#2f81f7" stroke-width="4">
-<animate attributeName="opacity" values="0.8;1;0.8" dur="5s" repeatCount="indefinite"/>
+<!-- Journey cards -->
+<g font-family="Arial">
+<rect x="50" y="220" width="310" height="150" rx="25" fill="#0b1628" stroke="#f0883e"/>
+<circle cx="115" cy="295" r="38" fill="none" stroke="#f0883e" stroke-width="5">
+<animate attributeName="r" values="38;45;38" dur="2s" repeatCount="indefinite"/>
 </circle>
-<circle cx="850" cy="720" r="250" fill="none" stroke="#58a6ff" stroke-width="2" stroke-dasharray="15 20">
-<animateTransform attributeName="transform" type="rotate" from="0 850 720" to="360 850 720" dur="20s" repeatCount="indefinite"/>
+<text x="175" y="280" fill="#f0883e" font-size="28" font-weight="700">SEO</text>
+<text x="175" y="315" fill="#c9d1d9" font-size="20">Get discovered</text>
+<text x="175" y="340" fill="#c9d1d9" font-size="20">Drive growth</text>
+
+<rect x="445" y="220" width="310" height="150" rx="25" fill="#0b1628" stroke="#2f81f7"/>
+<circle cx="510" cy="295" r="38" fill="none" stroke="#2f81f7" stroke-width="5">
+<animate attributeName="r" values="38;45;38" dur="2.4s" repeatCount="indefinite"/>
+</circle>
+<text x="570" y="280" fill="#2f81f7" font-size="28" font-weight="700">Development</text>
+<text x="570" y="315" fill="#c9d1d9" font-size="20">Build websites</text>
+<text x="570" y="340" fill="#c9d1d9" font-size="20">Create solutions</text>
+
+<rect x="840" y="220" width="310" height="150" rx="25" fill="#0b1628" stroke="#00d084"/>
+<circle cx="905" cy="295" r="38" fill="none" stroke="#00d084" stroke-width="5">
+<animate attributeName="r" values="38;45;38" dur="2.8s" repeatCount="indefinite"/>
+</circle>
+<text x="965" y="280" fill="#00d084" font-size="25" font-weight="700">Building</text>
+<text x="965" y="315" fill="#c9d1d9" font-size="20">Turn ideas</text>
+<text x="965" y="340" fill="#c9d1d9" font-size="20">into projects</text>
+</g>
+
+<!-- bio -->
+<g font-family="Arial" fill="#c9d1d9" font-size="27">
+<text x="60" y="460">I'm a digital professional from <tspan font-weight="bold">planet Earth</tspan>,</text>
+<text x="60" y="505">with a background in SEO, digital marketing,</text>
+<text x="60" y="550">web technologies, and e-commerce.</text>
+</g>
+
+<!-- Earth scene -->
+<circle cx="850" cy="790" r="240" fill="url(#earth)">
+<animate attributeName="opacity" values=".8;1;.8" dur="4s" repeatCount="indefinite"/>
 </circle>
 
-<text x="720" y="720" fill="#58a6ff" font-size="60" font-family="Arial">&lt;/&gt;</text>
+<circle cx="850" cy="790" r="280" fill="none" stroke="#2f81f7" stroke-width="2" stroke-dasharray="8 20">
+<animateTransform attributeName="transform" type="rotate" from="0 850 790" to="360 850 790" dur="18s" repeatCount="indefinite"/>
+</circle>
+
+<!-- orbit icons -->
+<g font-family="Arial" font-size="45">
+<text x="680" y="560" fill="#00d084">WP</text>
+<text x="1020" y="600" fill="#a371f7">GH</text>
+<text x="1080" y="820" fill="#2f81f7">&lt;/&gt;</text>
+</g>
 
 <!-- Terminal -->
-<rect x="70" y="680" width="520" height="300" rx="20" fill="#010409" stroke="#3fb950" stroke-width="3"/>
-<text x="110" y="770" fill="#3fb950" font-size="30" font-family="monospace">$ whoami</text>
-<text x="110" y="830" fill="#c9d1d9" font-size="27" font-family="monospace">I learn by building.</text>
-<text x="110" y="880" fill="#c9d1d9" font-size="27" font-family="monospace">I build by experimenting.</text>
-<text x="110" y="930" fill="#c9d1d9" font-size="27" font-family="monospace">And I keep improving.</text>
+<rect x="60" y="720" width="540" height="330" rx="25" fill="#010409" stroke="#00d084" stroke-width="3"/>
+<text x="100" y="790" fill="#00d084" font-size="28" font-family="monospace">$ whoami</text>
+<text x="100" y="850" fill="#fff" font-size="25" font-family="monospace">I learn by building.</text>
+<text x="100" y="900" fill="#fff" font-size="25" font-family="monospace">I build by experimenting.</text>
+<text x="100" y="950" fill="#fff" font-size="25" font-family="monospace">And I keep improving.</text>
+<rect x="330" y="980" width="14" height="28" fill="#00d084">
+<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+</rect>
 
-<!-- Bottom -->
-<text x="180" y="1150" fill="#3fb950" font-size="45">+</text>
-<text x="180" y="1200" fill="#c9d1d9" font-size="28" font-family="Arial">Explore</text>
+<!-- bottom journey -->
+<g font-family="Arial" text-anchor="middle">
+<text x="170" y="1180" fill="#00d084" font-size="55">✦</text>
+<text x="170" y="1230" fill="#fff" font-size="28">Explore</text>
 
-<text x="450" y="1150" fill="#2f81f7" font-size="45">⚙</text>
-<text x="450" y="1200" fill="#c9d1d9" font-size="28" font-family="Arial">Build</text>
+<text x="440" y="1180" fill="#2f81f7" font-size="55">⚙</text>
+<text x="440" y="1230" fill="#fff" font-size="28">Build</text>
 
-<text x="720" y="1150" fill="#f0883e" font-size="45">↗</text>
-<text x="720" y="1200" fill="#c9d1d9" font-size="28" font-family="Arial">Learn</text>
+<text x="710" y="1180" fill="#f0883e" font-size="55">↗</text>
+<text x="710" y="1230" fill="#fff" font-size="28">Learn</text>
 
-<text x="990" y="1150" fill="#3fb950" font-size="45">∞</text>
-<text x="990" y="1200" fill="#c9d1d9" font-size="28" font-family="Arial">Repeat</text>
-
-<text x="600" y="1330" text-anchor="middle" fill="#58a6ff" font-size="30" font-family="Arial">
-I learn by building. I build by experimenting. And I keep improving.
-</text>
+<text x="980" y="1180" fill="#00d084" font-size="55">∞</text>
+<text x="980" y="1230" fill="#fff" font-size="28">Repeat</text>
+</g>
 
 </svg>
