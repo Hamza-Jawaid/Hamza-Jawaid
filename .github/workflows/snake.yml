@@ -28,7 +28,7 @@ jobs:
         with:
           username: Hamza-Jawaid
           token: ${{ secrets.METRICS_TOKEN }}
-          theme: github-dark
+          theme: dark
           hide-border: true
           output-path: dist/streak-stats.svg
 

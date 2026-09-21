@@ -17,3 +17,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
+
+      - name: Add percentages to Algolia language cards
+        run: |
+          python3 .github/scripts/add_percentages.py
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add profile-summary-card-output/algolia/1-repos-per-language.svg
+          git add profile-summary-card-output/algolia/2-most-commit-language.svg
+          # Try to commit, do nothing if no changes
+          git commit -m "docs: append percentages to algolia language cards" || echo "No changes to commit"
+          git push
