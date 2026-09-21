@@ -38,26 +38,6 @@
         }
       }
 
-      /* Main Header Styling */
-      .main-header {
-        cursor: default;
-        transition: transform 0.3s ease;
-      }
-      .main-header:hover {
-        transform: translateY(-2px);
-      }
-      .title-text {
-        font-family: 'Inter', system-ui, sans-serif;
-        font-weight: 700;
-        font-size: 46px;
-        fill: #ffffff;
-        filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.75)); 
-        transition: filter 0.3s ease;
-      }
-      .main-header:hover .title-text {
-        filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.9));
-      }
-
       /* Card Backgrounds Base */
       .card-bg {
         fill: var(--card-bg);
@@ -144,11 +124,6 @@
       }
     </style>
   </defs>
-
-  <!-- Title Area -->
-  <g class="main-header">
-      <text x="400" y="50" class="title-text" text-anchor="middle" dy=".3em">🧭 What I Do</text>
-  </g>
 
   <!-- Card 1: SEO (Top Left) -->
   <g class="card-group">
