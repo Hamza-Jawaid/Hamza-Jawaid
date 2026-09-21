@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 738 518" width="100%" height="100%">
   <defs>
     <style>
+      /* <![CDATA[ */
       :root {
         --bg-color: transparent;
         --card-bg: #ffffff; 
@@ -50,7 +51,7 @@
         }
       }
 
-      /* Card Backgrounds */
+      /* Base Styles */
       .card-bg {
         fill: var(--card-bg);
         stroke: var(--border);
@@ -58,7 +59,6 @@
         rx: 16;
       }
 
-      /* Native SVG Text Styles - Using standard system fonts for GitHub compatibility */
       .card-title {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
         font-size: 18px;
@@ -74,12 +74,25 @@
         font-weight: 400;
       }
 
+      /* GitHub-Safe Color Classes (replaces inline var() attributes) */
       .ib-1 { fill: var(--icon-bg-1); }
       .ib-2 { fill: var(--icon-bg-2); }
       .ib-3 { fill: var(--icon-bg-3); }
       .ib-4 { fill: var(--icon-bg-4); }
 
-      /* Smooth Walking Glow Animations */
+      .icon-stroke-1 { stroke: var(--accent-1); }
+      .icon-stroke-2 { stroke: var(--accent-2); }
+      .icon-stroke-3 { stroke: var(--accent-3); }
+      .icon-stroke-4 { stroke: var(--accent-4); }
+
+      .pattern-stroke { stroke: var(--tag-pattern); }
+      .pattern-fill { fill: var(--tag-pattern); }
+      .border-stroke { stroke: var(--border); }
+
+      .stop-1 { stop-color: var(--tag-grad-1); }
+      .stop-2 { stop-color: var(--tag-grad-2); }
+
+      /* Walking Glow Animations */
       .cb-1 { animation: glow-1 8s ease-in-out infinite; }
       .cb-2 { animation: glow-2 8s ease-in-out infinite; }
       .cb-3 { animation: glow-3 8s ease-in-out infinite; }
@@ -116,6 +129,7 @@
       .spin-ccw { transform-origin: center; animation: spinLeft 6s linear infinite; }
       .pulse { animation: pulsing 2s ease-in-out infinite; }
       .pulse-fast { animation: pulsing 0.8s ease-in-out infinite; }
+      .blinking-eyes { animation: blink-eyes 4s infinite; }
 
       @keyframes hover {
         0%, 100% { transform: translateY(0px); }
@@ -133,6 +147,10 @@
         0%, 100% { opacity: 0.4; }
         50% { opacity: 1; }
       }
+      @keyframes blink-eyes {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
       
       .tag-bg { fill: url(#bg-grad); }
       .tag-pattern { fill: url(#tech-pattern); }
@@ -140,6 +158,7 @@
         fill: var(--tag-element-bg);
         stroke: var(--border);
       }
+      /* ]]> */
     </style>
 
     <filter id="card-shadow" x="-5%" y="-5%" width="115%" height="125%">
@@ -150,17 +169,17 @@
     </filter>
 
     <pattern id="tech-pattern" width="80" height="80" patternUnits="userSpaceOnUse">
-      <path d="M 0 40 L 30 40 L 45 25 L 80 25" fill="none" stroke="var(--tag-pattern)" stroke-width="1.5" />
-      <path d="M 20 80 L 20 60 L 35 45 L 80 45" fill="none" stroke="var(--tag-pattern)" stroke-width="1.5" />
-      <circle cx="30" cy="40" r="2.5" fill="var(--tag-pattern)" />
-      <circle cx="45" cy="25" r="2.5" fill="var(--tag-pattern)" />
-      <circle cx="20" cy="60" r="2.5" fill="var(--tag-pattern)" />
-      <circle cx="35" cy="45" r="2.5" fill="var(--tag-pattern)" />
+      <path d="M 0 40 L 30 40 L 45 25 L 80 25" fill="none" class="pattern-stroke" stroke-width="1.5" />
+      <path d="M 20 80 L 20 60 L 35 45 L 80 45" fill="none" class="pattern-stroke" stroke-width="1.5" />
+      <circle cx="30" cy="40" r="2.5" class="pattern-fill" />
+      <circle cx="45" cy="25" r="2.5" class="pattern-fill" />
+      <circle cx="20" cy="60" r="2.5" class="pattern-fill" />
+      <circle cx="35" cy="45" r="2.5" class="pattern-fill" />
     </pattern>
 
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="var(--tag-grad-1)" />
-      <stop offset="100%" stop-color="var(--tag-grad-2)" />
+      <stop offset="0%" class="stop-1" />
+      <stop offset="100%" class="stop-2" />
     </linearGradient>
   </defs>
 
@@ -173,10 +192,9 @@
     <g class="card-group">
       <rect class="card-bg cb-1" x="16" y="0" width="345" height="160" />
       <rect class="ib-1" x="40" y="24" width="44" height="44" rx="12" />
-      <g transform="translate(51, 35)">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
+      <!-- Replaced nested <svg> with standard transformed <g> -->
+      <g transform="translate(51, 35) scale(0.916)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-stroke-1">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </g>
       <text x="100" y="52" class="card-title">SEO</text>
       <text x="40" y="98" class="card-desc">
@@ -190,10 +208,8 @@
     <g class="card-group">
       <rect class="card-bg cb-2" x="377" y="0" width="345" height="160" />
       <rect class="ib-2" x="401" y="24" width="44" height="44" rx="12" />
-      <g transform="translate(412, 35)">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
-        </svg>
+      <g transform="translate(412, 35) scale(0.916)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-stroke-2">
+        <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
       </g>
       <text x="461" y="52" class="card-title">Development</text>
       <text x="401" y="98" class="card-desc">
@@ -207,10 +223,8 @@
     <g class="card-group">
       <rect class="card-bg cb-3" x="16" y="176" width="345" height="160" />
       <rect class="ib-3" x="40" y="200" width="44" height="44" rx="12" />
-      <g transform="translate(51, 211)">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-        </svg>
+      <g transform="translate(51, 211) scale(0.916)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-stroke-3">
+        <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
       </g>
       <text x="100" y="228" class="card-title">E-commerce</text>
       <text x="40" y="274" class="card-desc">
@@ -223,10 +237,8 @@
     <g class="card-group">
       <rect class="card-bg cb-4" x="377" y="176" width="345" height="160" />
       <rect class="ib-4" x="401" y="200" width="44" height="44" rx="12" />
-      <g transform="translate(412, 211)">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-        </svg>
+      <g transform="translate(412, 211) scale(0.916)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-stroke-4">
+        <circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
       </g>
       <text x="461" y="228" class="card-title">Automation</text>
       <text x="401" y="274" class="card-desc">
@@ -253,9 +265,9 @@
     <g transform="translate(30, 20)" filter="url(#element-shadow)">
       <rect x="0" y="0" width="50" height="70" rx="6" class="element-base" stroke-width="2" />
       
-      <line x1="8" y1="20" x2="42" y2="20" stroke="var(--border)" stroke-width="3" stroke-linecap="round" />
-      <line x1="8" y1="35" x2="42" y2="35" stroke="var(--border)" stroke-width="3" stroke-linecap="round" />
-      <line x1="8" y1="50" x2="42" y2="50" stroke="var(--border)" stroke-width="3" stroke-linecap="round" />
+      <line x1="8" y1="20" x2="42" y2="20" class="border-stroke" stroke-width="3" stroke-linecap="round" />
+      <line x1="8" y1="35" x2="42" y2="35" class="border-stroke" stroke-width="3" stroke-linecap="round" />
+      <line x1="8" y1="50" x2="42" y2="50" class="border-stroke" stroke-width="3" stroke-linecap="round" />
       
       <circle cx="12" cy="20" r="2.5" fill="#10b981" class="pulse-fast" />
       <circle cx="22" cy="20" r="2.5" fill="#10b981" />
@@ -277,27 +289,23 @@
     <!-- RIGHT ELEMENT: Hovering Robot -->
     <g transform="translate(400, -10)">
       <g class="hover-anim" filter="url(#element-shadow)">
-        <line x1="40" y1="35" x2="40" y2="10" stroke="var(--border)" stroke-width="3" stroke-linecap="round" />
+        <line x1="40" y1="35" x2="40" y2="10" class="border-stroke" stroke-width="3" stroke-linecap="round" />
         <circle cx="40" cy="8" r="6" fill="#f43f5e" class="pulse-fast" />
         
         <rect x="5" y="35" width="70" height="75" rx="16" class="element-base" stroke-width="2" />
         
         <rect x="15" y="48" width="50" height="30" rx="8" fill="#1e293b" />
         
-        <circle cx="30" cy="63" r="4.5" fill="#38bdf8">
-          <animate attributeName="opacity" values="1;0;1" dur="4s" repeatCount="indefinite" />
-        </circle>
-        <circle cx="50" cy="63" r="4.5" fill="#38bdf8">
-          <animate attributeName="opacity" values="1;0;1" dur="4s" repeatCount="indefinite" />
-        </circle>
+        <circle cx="30" cy="63" r="4.5" fill="#38bdf8" class="blinking-eyes" />
+        <circle cx="50" cy="63" r="4.5" fill="#38bdf8" class="blinking-eyes" />
         
         <ellipse cx="20" cy="72" rx="4" ry="2" fill="#fbcfe8" opacity="0.8" />
         <ellipse cx="60" cy="72" rx="4" ry="2" fill="#fbcfe8" opacity="0.8" />
 
-        <line x1="25" y1="95" x2="55" y2="95" stroke="var(--border)" stroke-width="3" stroke-linecap="round" />
+        <line x1="25" y1="95" x2="55" y2="95" class="border-stroke" stroke-width="3" stroke-linecap="round" />
         
-        <circle cx="-5" cy="80" r="8" class="element-base" stroke-width="2" class="hover-anim-delayed" />
-        <circle cx="85" cy="80" r="8" class="element-base" stroke-width="2" class="hover-anim-delayed" />
+        <circle cx="-5" cy="80" r="8" class="element-base hover-anim-delayed" stroke-width="2" />
+        <circle cx="85" cy="80" r="8" class="element-base hover-anim-delayed" stroke-width="2" />
       </g>
 
       <ellipse cx="40" cy="150" rx="24" ry="7" fill="none" stroke="#60a5fa" stroke-width="2" opacity="0.6" class="pulse" />
