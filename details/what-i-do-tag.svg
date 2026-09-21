@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" width="100%" height="100%">
+  <defs>
+    <!-- Import friendly script font to match the inspiration's aesthetic -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap');
+
+      .main-text {
+        font-family: 'Pacifico', cursive;
+        font-size: 52px;
+        fill: #1e293b;
+        filter: drop-shadow(1px 2px 0px rgba(255,255,255,0.5));
+      }
+
+      /* Animations */
+      .hover-anim {
+        animation: hover 4s ease-in-out infinite;
+      }
+      .hover-anim-delayed {
+        animation: hover 4s ease-in-out infinite;
+        animation-delay: -2s;
+      }
+      
+      .spin-cw {
+        transform-origin: center;
+        animation: spinRight 8s linear infinite;
+      }
+      .spin-ccw {
+        transform-origin: center;
+        animation: spinLeft 6s linear infinite;
+      }
+
+      .pulse {
+        animation: pulsing 2s ease-in-out infinite;
+      }
+      .pulse-fast {
+        animation: pulsing 0.8s ease-in-out infinite;
+      }
+
+      @keyframes hover {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      
+      @keyframes spinRight {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      @keyframes spinLeft {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(-360deg); }
+      }
+
+      @keyframes pulsing {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 1; }
+      }
+    </style>
+
+    <!-- Drop shadow for the main name tag mimicking the physical card look -->
+    <filter id="card-shadow" x="-5%" y="-5%" width="115%" height="125%">
+      <feDropShadow dx="3" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.12" />
+    </filter>
+
+    <!-- Drop shadow for the elements popping out -->
+    <filter id="element-shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.15" />
+    </filter>
+
+    <!-- Subtle background pattern (Circuit/Grid) mimicking the faint background illustrations -->
+    <pattern id="tech-pattern" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 0 40 L 30 40 L 45 25 L 80 25" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.4"/>
+      <path d="M 20 80 L 20 60 L 35 45 L 80 45" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.4"/>
+      <circle cx="30" cy="40" r="2.5" fill="#ffffff" fill-opacity="0.5"/>
+      <circle cx="45" cy="25" r="2.5" fill="#ffffff" fill-opacity="0.5"/>
+      <circle cx="20" cy="60" r="2.5" fill="#ffffff" fill-opacity="0.5"/>
+      <circle cx="35" cy="45" r="2.5" fill="#ffffff" fill-opacity="0.5"/>
+    </pattern>
+
+    <!-- Base Gradient for Tag -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bfdbfe" /> <!-- Pastel Blue -->
+      <stop offset="100%" stop-color="#a7f3d0" /> <!-- Soft Mint Green blend -->
+    </linearGradient>
+  </defs>
+
+  <!-- =============================== -->
+  <!-- MAIN TAG BASE                   -->
+  <!-- =============================== -->
+  <g filter="url(#card-shadow)">
+    <!-- Base Card -->
+    <rect x="50" y="40" width="500" height="140" rx="8" fill="url(#bg-grad)" />
+    <!-- Background Pattern overlay -->
+    <rect x="50" y="40" width="500" height="140" rx="8" fill="url(#tech-pattern)" />
+  </g>
+
+  <!-- =============================== -->
+  <!-- CENTER TEXT                     -->
+  <!-- =============================== -->
+  <text x="300" y="125" class="main-text" text-anchor="middle">What I Do</text>
+
+  <!-- =============================== -->
+  <!-- LEFT ELEMENT: Tech "Plant" / Server -->
+  <!-- =============================== -->
+  <!-- This replaces the cactus pot from the inspiration with a server rack & holographic rings -->
+  <g transform="translate(60, 50)" filter="url(#element-shadow)">
+    <!-- Holographic Rings (UI/Gears) acting as the "plant" -->
+    <g transform="translate(45, 20)">
+      <!-- Outer dashed ring (Spins Right) -->
+      <circle cx="0" cy="0" r="24" fill="none" stroke="#3b82f6" stroke-width="3" stroke-dasharray="10 6" class="spin-cw" />
+      <!-- Inner dashed ring (Spins Left) -->
+      <circle cx="0" cy="0" r="14" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="6 4" class="spin-ccw" />
+      <!-- Glowing core -->
+      <circle cx="0" cy="0" r="5" fill="#8b5cf6" class="pulse" />
+      
+      <!-- Small secondary floating gear -->
+      <g transform="translate(32, -15)">
+        <circle cx="0" cy="0" r="12" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="4 3" class="spin-cw" />
+        <circle cx="0" cy="0" r="3" fill="#10b981" />
+      </g>
+    </g>
+
+    <!-- Server Rack "Pot" -->
+    <rect x="20" y="50" width="50" height="55" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="3" />
+    
+    <!-- Server Blades -->
+    <line x1="28" y1="65" x2="62" y2="65" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" />
+    <line x1="28" y1="80" x2="62" y2="80" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" />
+    <line x1="28" y1="95" x2="62" y2="95" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Blinking Server Lights -->
+    <circle cx="32" cy="65" r="2.5" fill="#10b981" class="pulse-fast" />
+    <circle cx="42" cy="65" r="2.5" fill="#10b981" />
+    <circle cx="32" cy="80" r="2.5" fill="#3b82f6" class="pulse" />
+  </g>
+
+  <!-- =============================== -->
+  <!-- RIGHT ELEMENT: Cute Hover Robot -->
+  <!-- =============================== -->
+  <!-- This replaces the llama from the inspiration, breaking the top frame slightly -->
+  <g transform="translate(450, 30)">
+    
+    <!-- Main Robot Group (Animated Hover) -->
+    <g class="hover-anim" filter="url(#element-shadow)">
+      
+      <!-- Robot Antenna -->
+      <line x1="40" y1="35" x2="40" y2="10" stroke="#94a3b8" stroke-width="3" stroke-linecap="round" />
+      <circle cx="40" cy="8" r="6" fill="#f43f5e" class="pulse-fast" />
+      
+      <!-- Robot Body -->
+      <rect x="5" y="35" width="70" height="75" rx="16" fill="#ffffff" stroke="#94a3b8" stroke-width="3" />
+      
+      <!-- Robot Screen / Visor -->
+      <rect x="15" y="48" width="50" height="30" rx="8" fill="#1e293b" />
+      
+      <!-- Animated Glowing Eyes -->
+      <circle cx="30" cy="63" r="4.5" fill="#38bdf8">
+        <animate attributeName="opacity" values="1;0;1" dur="4s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="50" cy="63" r="4.5" fill="#38bdf8">
+        <animate attributeName="opacity" values="1;0;1" dur="4s" repeatCount="indefinite" />
+      </circle>
+      
+      <!-- Cheek blushes (Cute touch mirroring the llama aesthetic) -->
+      <ellipse cx="20" cy="72" rx="4" ry="2" fill="#fbcfe8" opacity="0.8" />
+      <ellipse cx="60" cy="72" rx="4" ry="2" fill="#fbcfe8" opacity="0.8" />
+
+      <!-- Body detailing -->
+      <line x1="25" y1="95" x2="55" y2="95" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" />
+      
+      <!-- Floating Hands (Animated with delay for organic feel) -->
+      <circle cx="-5" cy="80" r="8" fill="#ffffff" stroke="#94a3b8" stroke-width="3" class="hover-anim-delayed" />
+      <circle cx="85" cy="80" r="8" fill="#ffffff" stroke="#94a3b8" stroke-width="3" class="hover-anim-delayed" />
+    </g>
+
+    <!-- Robot Exhaust / Hover Ring (Stationary below robot) -->
+    <ellipse cx="40" cy="135" rx="20" ry="6" fill="none" stroke="#60a5fa" stroke-width="2" opacity="0.6" class="pulse" />
+    <ellipse cx="40" cy="135" rx="10" ry="3" fill="#38bdf8" opacity="0.3" class="pulse-fast" />
+  </g>
+
+</svg>
