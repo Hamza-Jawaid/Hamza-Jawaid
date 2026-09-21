@@ -6,7 +6,7 @@
 <div align="left"> 
   
   <!-- Top Metrics Header (Displays Name, Join Date, and Contributed Repositories) -->
-  <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/metrics.header.svg?v=2" alt="GitHub Header" /> 
+  <img src="https://raw.githubusercontent.com/Hamza-Jawaid/Hamza-Jawaid/main/metrics.header.svg?v=2" alt="GitHub Header" width="100%"/> 
 
   <!-- Dynamic Contribution Activity Graph (Custom Vercel deployment) -->
   <img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=Hamza-Jawaid&theme=react-dark&hide_border=true&bg_color=1D1117&color=ffffff&line=ffc800&point=ff0000&area=true&area_color=ffc800" alt="Contribution Graph" width="100%" />
