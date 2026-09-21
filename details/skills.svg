@@ -5,13 +5,12 @@
 
       :root {
         --bg-color: transparent;
-        --card-bg: #ffffff;
+        /* Adjusted slightly off-white in light mode to make the pure white shine visible */
+        --card-bg: #f8fafc; 
         --text-main: #111827;
         --text-sub: #4b5563;
         --border: #e5e7eb;
-        --border-hover: #d1d5db;
         --shadow: rgba(0, 0, 0, 0.05);
-        --shadow-hover: rgba(0, 0, 0, 0.1);
         --icon-bg-1: #e0f2fe;
         --icon-bg-2: #f3e8ff;
         --icon-bg-3: #dcfce7;
@@ -20,6 +19,10 @@
         --accent-2: #9333ea;
         --accent-3: #16a34a;
         --accent-4: #ea580c;
+        
+        /* Shine Colors */
+        --shine-edge: transparent;
+        --shine-center: rgba(255, 255, 255, 1);
       }
 
       @media (prefers-color-scheme: dark) {
@@ -28,9 +31,7 @@
           --text-main: #f8fafc;
           --text-sub: #94a3b8;
           --border: #334155;
-          --border-hover: #475569;
           --shadow: rgba(0, 0, 0, 0.2);
-          --shadow-hover: rgba(0, 0, 0, 0.4);
           --icon-bg-1: rgba(2, 132, 199, 0.2);
           --icon-bg-2: rgba(147, 51, 234, 0.2);
           --icon-bg-3: rgba(22, 163, 74, 0.2);
@@ -39,10 +40,13 @@
           --accent-2: #c084fc;
           --accent-3: #4ade80;
           --accent-4: #fb923c;
+          
+          /* Subtle shine for dark mode */
+          --shine-center: rgba(255, 255, 255, 0.12);
         }
       }
 
-      /* Styles for the "pretty" text */
+      /* Styles for the main header */
       .main-header {
         cursor: default;
         transition: transform 0.3s ease;
@@ -53,45 +57,25 @@
       .title-text {
         font-family: 'Inter', system-ui, sans-serif;
         font-weight: 700;
-        font-size: 46px; /* Increased font size */
-        fill: #ffffff; /* Pure white font */
-        /* Sharp, close shadow (offset-x, offset-y, blur-radius, color) */
+        font-size: 46px;
+        fill: #ffffff;
         filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.75)); 
         transition: filter 0.3s ease;
       }
       .main-header:hover .title-text {
-        /* Slightly deeper on hover but still sharp */
         filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.9));
       }
 
-      .card-group {
-        cursor: default;
-        transition: transform 0.3s ease;
-      }
-
-      .card-group:hover {
-        transform: translateY(-4px);
-      }
-
+      /* Card Backgrounds */
       .card-bg {
         fill: var(--card-bg);
         stroke: var(--border);
         stroke-width: 1.5;
         rx: 16;
-        transition: all 0.3s ease;
         filter: drop-shadow(0 4px 6px var(--shadow));
       }
 
-      .card-group:hover .card-bg {
-        stroke: var(--border-hover);
-        filter: drop-shadow(0 12px 20px var(--shadow-hover));
-      }
-
-      .card-group:hover .cb-1 { stroke: var(--accent-1); }
-      .card-group:hover .cb-2 { stroke: var(--accent-2); }
-      .card-group:hover .cb-3 { stroke: var(--accent-3); }
-      .card-group:hover .cb-4 { stroke: var(--accent-4); }
-
+      /* Content Layout */
       .content-wrapper {
         font-family: 'Inter', system-ui, sans-serif;
         padding: 24px;
@@ -137,18 +121,41 @@
         color: var(--text-sub);
         font-weight: 400;
       }
+
+      /* Glass Shine Effect Classes */
+      .shine-edge { stop-color: var(--shine-edge); }
+      .shine-center { stop-color: var(--shine-center); }
+      .shine-overlay {
+        fill: url(#shineGradient);
+        rx: 16;
+        pointer-events: none; /* Prevents blocking text selection */
+      }
     </style>
+
+    <!-- Moving Glass Shine Gradient (Sweeps left to right) -->
+    <linearGradient id="shineGradient" gradientUnits="objectBoundingBox" x1="-100%" y1="0%" x2="0%" y2="0%" gradientTransform="rotate(35 0.5 0.5)">
+      <stop offset="35%" class="shine-edge" />
+      <stop offset="50%" class="shine-center" />
+      <stop offset="65%" class="shine-edge" />
+      
+      <!-- KeyTimes set to create a pause: sweeps for 2.4s, pauses for 3.6s (6s total loop) -->
+      <animate attributeName="x1" values="-200%; 300%; 300%" keyTimes="0; 0.4; 1" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="-100%; 400%; 400%" keyTimes="0; 0.4; 1" dur="6s" repeatCount="indefinite" />
+    </linearGradient>
   </defs>
 
-  <!-- Title Area (No Background, White Text with Sharp Shadow) -->
-  <!-- Adjusted y="50" slightly to accommodate the larger font without clipping -->
+  <!-- Title Area -->
   <g class="main-header">
       <text x="400" y="50" class="title-text" text-anchor="middle" dy=".3em">🧭 What I Do</text>
   </g>
 
   <!-- Card 1: SEO -->
   <g class="card-group">
-    <rect class="card-bg cb-1" x="40" y="90" width="345" height="160" />
+    <!-- Solid base background -->
+    <rect class="card-bg" x="40" y="90" width="345" height="160" />
+    <!-- Glass shine overlay positioned over the background -->
+    <rect class="shine-overlay" x="40" y="90" width="345" height="160" rx="16" />
+    <!-- Content -->
     <foreignObject x="40" y="90" width="345" height="160">
       <div xmlns="http://www.w3.org/1999/xhtml" class="content-wrapper">
         <div class="header">
@@ -164,7 +171,8 @@
 
   <!-- Card 2: Development -->
   <g class="card-group">
-    <rect class="card-bg cb-2" x="415" y="90" width="345" height="160" />
+    <rect class="card-bg" x="415" y="90" width="345" height="160" />
+    <rect class="shine-overlay" x="415" y="90" width="345" height="160" rx="16" />
     <foreignObject x="415" y="90" width="345" height="160">
       <div xmlns="http://www.w3.org/1999/xhtml" class="content-wrapper">
         <div class="header">
@@ -180,7 +188,8 @@
 
   <!-- Card 3: E-commerce -->
   <g class="card-group">
-    <rect class="card-bg cb-3" x="40" y="275" width="345" height="160" />
+    <rect class="card-bg" x="40" y="275" width="345" height="160" />
+    <rect class="shine-overlay" x="40" y="275" width="345" height="160" rx="16" />
     <foreignObject x="40" y="275" width="345" height="160">
       <div xmlns="http://www.w3.org/1999/xhtml" class="content-wrapper">
         <div class="header">
@@ -196,7 +205,8 @@
 
   <!-- Card 4: Automation -->
   <g class="card-group">
-    <rect class="card-bg cb-4" x="415" y="275" width="345" height="160" />
+    <rect class="card-bg" x="415" y="275" width="345" height="160" />
+    <rect class="shine-overlay" x="415" y="275" width="345" height="160" rx="16" />
     <foreignObject x="415" y="275" width="345" height="160">
       <div xmlns="http://www.w3.org/1999/xhtml" class="content-wrapper">
         <div class="header">
