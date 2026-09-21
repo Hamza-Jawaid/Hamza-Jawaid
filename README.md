@@ -59,7 +59,6 @@ I'm continuously exploring new technologies and adding new tools to my stack.
 
 ---
 <!-- What I Do Cards -->
-<img src="details/what-i-do-tag.svg"/>
 <img src="details/skills.svg"/>
 
 ---
