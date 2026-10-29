@@ -21,10 +21,10 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="255.73889409318303" height="8" fill="#4F5D95"/>
-                    <rect mask="url(#languages-bar)" x="255.73889409318303" y="0" width="150.4119920135075" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="406.15088610669056" y="0" width="29.920323155317877" height="8" fill="#663399"/>
-                    <rect mask="url(#languages-bar)" x="436.0712092620084" y="0" width="23.928790737991637" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="255.65380136063308" height="8" fill="#4F5D95"/>
+                    <rect mask="url(#languages-bar)" x="255.65380136063308" y="0" width="151.0205663043212" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="406.6743676649543" y="0" width="29.62261297093341" height="8" fill="#663399"/>
+                    <rect mask="url(#languages-bar)" x="436.2969806358877" y="0" width="23.70301936411228" height="8" fill="#878787"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -36,7 +36,7 @@
                                 PHP
                             </div>
                             <small>
-                                <div>55.6%</div>
+                                <div>55.58%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -47,7 +47,7 @@
                                 CSS
                             </div>
                             <small>
-                                <div>6.5%</div>
+                                <div>6.44%</div>
                             </small>
                         </div>
                     </section>
@@ -60,18 +60,18 @@
                                 JavaScript
                             </div>
                             <small>
-                                <div>32.7%</div>
+                                <div>32.83%</div>
                             </small>
                         </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#3572A5" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#878787" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                Python
+                                Hack
                             </div>
                             <small>
-                                <div>5.2%</div>
+                                <div>5.15%</div>
                             </small>
                         </div>
                     </section>
